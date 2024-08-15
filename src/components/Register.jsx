@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import { useDispatch } from 'react-redux';
 // import { registerUser } from './authSlice';
 import backgroundImage from '../assets/bg-image.jpg'
-
+import { Link } from 'react-router-dom';
 const Register = () => {
 //   const dispatch = useDispatch();
 
@@ -134,6 +134,10 @@ const Register = () => {
             <button type="submit" className="w-full bg-red-500 text-white py-4 px-4 rounded-lg hover:bg-red-600">
             Register
             </button>
+
+            <p className="text-center text-gray-600 mt-4">
+          Already have an account? <Link to="/login" className='text-blue-700'>Login</Link>
+        </p>
         </form>
         </div>
   );

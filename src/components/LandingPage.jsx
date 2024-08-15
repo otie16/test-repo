@@ -1,12 +1,13 @@
 import React from 'react';
-import support from '../assets/support.jpg';
-import cloud from '../assets/cloud.jpg'
-import network from '../assets/network.jpg'
+import support from '../assets/call-center.jpg';
+import cloud from '../assets/cloud-image.jpg'
+import network from '../assets/network_install.webp'
 
 
 const LandingPage = () => {
   return (
     <div className="bg-gray-100">
+      
       {/* <header className="bg-red-600 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Phase3</h1>
@@ -27,7 +28,7 @@ const LandingPage = () => {
           <a href="#services" className="bg-red-600 text-white py-3 px-8 rounded-full hover:bg-red-700 transition">Explore Services</a>
         </section>
 
-        <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-40">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
             <img src={network} alt="Service 1" className="mx-auto mb-6 rounded-lg"/>
             <h3 className="text-2xl font-bold mb-4">Networking Solutions</h3>
@@ -48,18 +49,15 @@ const LandingPage = () => {
         <section id="about" className="text-center py-16">
           <h3 className="text-4xl font-extrabold text-gray-800 mb-6">About Phase3 Telecom</h3>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            At NetworkCo, we specialize in providing cutting-edge networking solutions that keep your business connected and running smoothly.
+            At Phase3 Telecom, we specialize in providing cutting-edge networking solutions that keep your business connected and running smoothly.
           </p>
         </section>
-
         <section id="contact" className="bg-red-600 text-white py-16 text-center">
           <h3 className="text-4xl font-extrabold mb-6">Get in Touch</h3>
           <p className="mb-6">Need assistance? Reach out to us today!</p>
           <a href="mailto:contact@networkco.com" className="bg-white text-red-600 py-3 px-8 rounded-full hover:bg-gray-200 transition">Contact Us</a>
         </section>
       </main>
-
-     
     </div>
   );
 };

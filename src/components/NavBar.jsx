@@ -36,9 +36,8 @@ const Navbar = () => {
         </div>
       </div>
       <nav className={isOpen ? 'block px-2 pt-2 pb-4 ' : 'hidden sm:flex align-items justify-around px-4 py-3' }>
-        <Link to="/register" className=' block px-2 py-1 font-semibold rounded hover:bg-gray-200 sm:mr-3 sm:mt-0'>Register</Link>
-        <Link   to="/login" className='block px-2 py-1 font-semibold rounded hover:bg-gray-200 sm:mr-3 sm:mt-0'>Login</Link>
-        <Link to="/service-request" className='block px-2 py-1 font-semibold rounded hover:bg-gray-200 sm:mr-3 sm:mt-0'>Request for Service</Link>
+        <Link to="/login" className='block px-6 py-2 font-semibold rounded hover:bg-gray-200 hover:rounded-full sm:mr-3 sm:mt-0'>Login</Link>
+        <Link to="/service-request" className='block px-6 py-2 font-semibold rounded hover:bg-gray-200 hover:rounded-full sm:mr-3 sm:mt-0'>Request for Service</Link>
       </nav>
     </header>
 

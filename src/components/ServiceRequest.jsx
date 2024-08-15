@@ -47,7 +47,7 @@ const ServiceRequestForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             />
           </div>
@@ -58,7 +58,7 @@ const ServiceRequestForm = () => {
               name="companyName"
               value={formData.companyName}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
             />
           </div>
           <div>
@@ -68,7 +68,7 @@ const ServiceRequestForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             />
           </div>
@@ -79,7 +79,7 @@ const ServiceRequestForm = () => {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             />
           </div>
@@ -89,7 +89,7 @@ const ServiceRequestForm = () => {
               name="serviceType"
               value={formData.serviceType}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             >
               <option value="">Select Service Type</option>
@@ -108,7 +108,7 @@ const ServiceRequestForm = () => {
               name="existingNetwork"
               value={formData.existingNetwork}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             >
               <option value="">Select Network Infrastructure</option>
@@ -124,7 +124,7 @@ const ServiceRequestForm = () => {
               name="urgency"
               value={formData.urgency}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             >
               <option value="">Select Urgency</option>
@@ -141,7 +141,7 @@ const ServiceRequestForm = () => {
               name="location"
               value={formData.location}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             />
           </div>
@@ -152,7 +152,7 @@ const ServiceRequestForm = () => {
               name="numberOfDevices"
               value={formData.numberOfDevices}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-gray-100 rounded-lg outline-none shadow-sm"
               required
             />
           </div>
@@ -163,7 +163,7 @@ const ServiceRequestForm = () => {
               name="networkDevices"
               value={formData.networkDevices}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               placeholder="e.g., Routers, Switches, Firewalls"
               required
             />
@@ -174,7 +174,7 @@ const ServiceRequestForm = () => {
               name="networkSize"
               value={formData.networkSize}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black-100 rounded-lg outline-none shadow-sm"
               required
             >
               <option value="">Select Network Size</option>
@@ -189,7 +189,7 @@ const ServiceRequestForm = () => {
               name="problemDescription"
               value={formData.problemDescription}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-black-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-gray-100 rounded-lg outline-none shadow-sm"
               rows="4"
               placeholder="Please describe the issue or service you need..."
               required
@@ -202,7 +202,7 @@ const ServiceRequestForm = () => {
               name="preferredContactTime"
               value={formData.preferredContactTime}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-gray-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-black rounded-lg outline-none shadow-sm"
               placeholder="e.g., Morning, Afternoon, Evening"
             />
           </div>
@@ -213,7 +213,7 @@ const ServiceRequestForm = () => {
               name="budget"
               value={formData.budget}
               onChange={handleChange}
-              className="w-full p-3 border-2 border-gray-100 rounded-lg outline-none shadow-sm"
+              className="w-full p-3 border-default border-gray-100 rounded-lg outline-none shadow-sm"
               placeholder="e.g., $500 - $1000"
             />
           </div>

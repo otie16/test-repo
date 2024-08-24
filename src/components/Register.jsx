@@ -10,9 +10,10 @@ const Register = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [middleName, setMiddleName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [address, setAddress] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
  
 
@@ -24,9 +25,10 @@ const Register = () => {
         first_name: firstName,
         last_name: lastName,
         middle_name: middleName,
+        username,
         email,
         password,
-        address,
+        password2: confirmPassword,
     }
 
     console.log('Form submitted:', formData);
@@ -90,6 +92,19 @@ const Register = () => {
                 className="w-full border-b-2  border-gray-200 focus:outline-none focus:border-gray-200"
             />
             </div>
+            
+            <div className="mb-4"> 
+            <label className="block text-sm font-medium mb-2" htmlFor="username">
+                Username
+            </label>
+            <input
+                type="text"
+                name="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className="w-full border-b-2  border-gray-200 focus:outline-none focus:border-gray-200"
+            />
+            </div>
 
             <div className="mb-4">
             <label className="block text-sm font-medium mb-2" htmlFor="email">
@@ -120,14 +135,16 @@ const Register = () => {
             </div>
 
             <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" htmlFor="address">
-                Address
+            <label className="block text-sm font-medium mb-2" htmlFor="confirm password">
+                confirm password
             </label>
-            <textarea
-                name="address"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
+            <input
+                type="password"
+                name="confirm-password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
                 className="w-full border-b-2  border-gray-200 focus:outline-none focus:border-gray-200"
+                required
             />
             </div>
 

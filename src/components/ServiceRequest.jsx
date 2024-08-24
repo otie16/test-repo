@@ -168,7 +168,7 @@ const ServiceRequestForm = () => {
               required
             />
           </div>
-          <div>
+          <div className='relative inline-block text-left group'>
             <label className="block text-gray-700">Network Size</label>
             <select
               name="networkSize"
@@ -214,7 +214,7 @@ const ServiceRequestForm = () => {
               value={formData.budget}
               onChange={handleChange}
               className="w-full p-3 border-default border-gray-100 rounded-lg outline-none shadow-sm"
-              placeholder="e.g., $500 - $1000"
+              placeholder=""
             />
           </div>
           <div className="col-span-2">

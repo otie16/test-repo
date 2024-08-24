@@ -6,7 +6,7 @@ import network from '../assets/network_install.webp'
 
 const LandingPage = () => {
   return (
-    <div className="bg-white-100">
+    <div className="bg-white">
       <p>Gimme The Game!!!</p>
       {/* <header className="bg-red-600 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">

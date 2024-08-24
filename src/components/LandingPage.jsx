@@ -7,7 +7,8 @@ import network from '../assets/network_install.webp'
 const LandingPage = () => {
   return (
     <div className="bg-white">
-      
+      <p>New Here</p>
+      <h1>new heading</h1>
       {/* <header className="bg-red-600 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Phase3</h1>

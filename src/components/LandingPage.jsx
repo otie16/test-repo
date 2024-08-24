@@ -7,7 +7,7 @@ import network from '../assets/network_install.webp'
 const LandingPage = () => {
   return (
     <div className="bg-white">
-      <p>Gimme The Game!!!</p>
+      
       {/* <header className="bg-red-600 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Phase3</h1>
@@ -29,20 +29,26 @@ const LandingPage = () => {
         </section>
 
         <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-40">
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-            <img src={network} alt="Service 1" className="mx-auto mb-6 rounded-lg"/>
+          <div className="bg-white rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <img src={network} alt="Service 1" className="mx-auto mb-6 rounded-t-lg"/>
+            <div className='p-4 mb-4'>
             <h3 className="text-2xl font-bold mb-4">Networking Solutions</h3>
-            <p className="text-gray-600">Custom network setups for businesses of all sizes.</p>
+            <p className="text-gray-600 ">Custom network setups for businesses of all sizes.</p>
+            </div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-            <img src={cloud} alt="Service 2" className="mx-auto mb-6 rounded-lg"/>
+          <div className="bg-white  rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <img src={cloud} alt="Service 2" className="mx-auto mb-6 rounded-t-lg"/>
+            <div className='p-4 mb-4'>
             <h3 className="text-2xl font-bold mb-4">Cloud Integration</h3>
             <p className="text-gray-600">Seamless integration with cloud services.</p>
+            </div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-            <img src={support} alt="Service 3" className="mx-auto mb-6 rounded-lg "/>
+          <div className="bg-white  rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+            <img src={support} alt="Service 3" className="mx-auto mb-6 rounded-t-lg "/>
+            <div className='p-4 mb-4'>
             <h3 className="text-2xl font-bold mb-4">24/7 Support</h3>
             <p className="text-gray-600">Always there when you need us the most.</p>
+            </div>
           </div>
         </section>
 

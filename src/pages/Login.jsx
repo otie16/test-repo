@@ -1,19 +1,28 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import backgroundImage from '../assets/bg-image.jpg'
 import { Link } from 'react-router-dom';
+import AuthContext from '../context/AuthContext';
+import { Navigate } from 'react-router-dom';
+
+// import { useContext } from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { registerUser } from './authSlice';
 
-export default function Login(){
+export default function Login() {
+
+  const {loginUser} = useContext(AuthContext)
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     // const dispatch = useDispatch();
-
+  const user = useContext(AuthContext)
     // console.log(email)
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) => {
       e.preventDefault()
+
+      email.length > 0 && loginUser(email, password)
+      
       // dispatch(registerUser({ email, password }));
       setEmail('');
       setPassword('');
@@ -22,11 +31,15 @@ export default function Login(){
       const formData = {
         email: email,
         password: password,
-        // isRegistered: submitted, // Passing the registration status from the store to the component
       }
-      console.log(formData)
-      console.log("submitted")
-    }
+        // isRegistered: submitted, // Passing the registration status from the store to the component
+      // }
+      // console.log(formData)
+      // console.log("submitted")
+     
+    
+  }
+  user ? Navigate("/"):null
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-cover bg-center opacity-80" style={{ backgroundImage: `url(${backgroundImage})` }}>

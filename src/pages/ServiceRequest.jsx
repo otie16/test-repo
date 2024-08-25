@@ -214,7 +214,7 @@ const ServiceRequestForm = () => {
               value={formData.budget}
               onChange={handleChange}
               className="w-full p-3 border-default border-gray-100 rounded-lg outline-none shadow-sm"
-              placeholder="e.g., $500 - $1000"
+              placeholder=""
             />
           </div>
           <div className="col-span-2">
